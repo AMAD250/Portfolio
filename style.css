@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul, li, a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5dcf10;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh; 
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 10px;
+    background-color: #333;
+    transition: background-color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.content, .projects-content, .contact-content {
+    flex: 4;
+    padding: 20px;
+    overflow: hidden; 
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-areas: 
+        'info form'
+        'map map';
+    gap: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    margin: 10px;
+    padding: 5px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.contact {
+    background-color: rgb(167, 174, 174);
+}
+
+.home {
+    color: chocolate;
+    background-color: aqua;
+}
+
+.projects {
+    text-align: center;
+    background-color: #0ad711;
+}
+
+.contact-content h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.projects-content {
+    background-color: #0ad711; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    margin-top: 20px; 
+}
+
+.projects-content > section > h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 15px; 
+}
+
+.projects-content > section + section {
+    margin-top: 30px;
+}
+
+.projects-content > section > iframe[title="YouTube video player"] {
+    border: none; 
+    border-radius: 8px; 
+}
+
+.projects-content > section::before {
+    content: '🚀'; 
+    margin-right: 10px;
+}
+
+.projects-content a {
+    color: #17a2b8; 
+    text-decoration: underline; 
+}
+.projects-content h2, .projects-content p {
+    margin: 10px 0;
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px; 
+}
+
+.sidebar {
+    background-color: #343a40; 
+}
+
+.sidebar ul li a {
+    color: #ffffff; 
+}
+
+.sidebar ul li a:hover {
+    background-color: #0a78e7; 
+}
+
+.content ol {
+    padding-left: 40px; 
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group input[type="email"],
+.form-group input[type="text"],
+.form-group select {
+    height: 40px;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.icon {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #060606;
+}
+
+.dark-theme .theme-switcher label,
+.dark-theme .theme-switcher select {
+    color: #0e0d0d;
+}
+
+body.light-theme {
+    background-color: #fcfbfb;
+    color: #fefdfd;
+}
+
+.light-theme .theme-switcher label,
+.light-theme .theme-switcher select {
+    color: #fffefe;
+}
+
+@media only screen and (max-width: 600px) { 
+}
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+}
+@media only screen and (min-width: 900px) {
+}

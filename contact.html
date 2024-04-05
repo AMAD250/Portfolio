@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+    <div class="container contact">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <main class="content contact-content">
+            <h1>Contact Me</h1>
+            <div class="contact-details">
+                <ul>
+                    <li>Email: <a href="mailto:ah433992@dal.ca">ah433992@dal.ca</a> <img src="outlook.jpeg" alt="Outlook Logo" class="icon" /></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/ahmed-alsayed-3594b52b3" target="_blank">Ahmed Elsorogy</a></li>
+                </ul>
+            </div>
+            
+            <div class="contact-form">
+                <form id="myForm" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Letters and spaces only" />
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" required min="18" max="100" />
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="feedback">Feedback:</label>
+                        <textarea id="feedback" name="feedback" required></textarea>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="topic">Topic of Interest:</label>
+                        <select id="topic" name="topic" required>
+                            <option value="">Please choose an option</option>
+                            <option value="technology">Technology</option>
+                            <option value="science">Science</option>
+                            <option value="arts">Arts</option>
+                        </select>
+                    </div>
+            
+                    <div class="form-group">
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <button id="notifyButton">Show Notification</button>
+            <div class="theme-switcher">
+                <label for="theme-select">Choose a theme:</label>
+                <select id="theme-select">
+                    <option value="default">Default</option>
+                    <option value="dark">Dark</option>
+                    <option value="light">Light</option>
+                </select>
+            </div>
+
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
